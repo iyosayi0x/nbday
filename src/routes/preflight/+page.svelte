@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import Icon from '@iconify/svelte';
 	const PERSISTENCE_KEY_NAME = 'PREFLIGHT_CHECKLIST';
 
@@ -36,6 +37,10 @@
 		});
 
 		localStorage.setItem(PERSISTENCE_KEY_NAME, JSON.stringify(preflightTasks));
+	};
+
+	const handleEnterStory = () => {
+		goto('/story');
 	};
 
 	const allTasksDone = $derived.by(() => {
@@ -141,6 +146,7 @@
 				class="group shadow-glow relative overflow-hidden rounded-full bg-gold px-8 py-3.5 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(212,175,53,0.5)]"
 				aria-label="Enter the story"
 				disabled={!allTasksDone}
+				onclick={handleEnterStory}
 			>
 				<div
 					class="absolute inset-0 translate-y-full bg-white/20 transition-transform duration-300 ease-out group-hover:translate-y-0"
