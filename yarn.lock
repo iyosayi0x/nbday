@@ -348,6 +348,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify/svelte@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@iconify/svelte@npm:5.1.0"
+  dependencies:
+    "@iconify/types": "npm:^2.0.0"
+  peerDependencies:
+    svelte: ">4.0.0"
+  checksum: 10c0/dd25185e7a26fd5fcb3dd6bd282fd296656d53f38f2f3e563ba85c1099809ca01dfd007eeb955234d18d909efe9760b0b18f95efded1cc0d3d087860e53b83ff
+  languageName: node
+  linkType: hard
+
+"@iconify/types@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@iconify/types@npm:2.0.0"
+  checksum: 10c0/65a3be43500c7ccacf360e136d00e1717f050b7b91da644e94370256ac66f582d59212bdb30d00788aab4fc078262e91c95b805d1808d654b72f6d2072a7e4b2
+  languageName: node
+  linkType: hard
+
 "@isaacs/balanced-match@npm:^4.0.1":
   version: 4.0.1
   resolution: "@isaacs/balanced-match@npm:4.0.1"
@@ -2249,6 +2267,7 @@ __metadata:
   dependencies:
     "@eslint/compat": "npm:^1.4.0"
     "@eslint/js": "npm:^9.39.1"
+    "@iconify/svelte": "npm:^5.1.0"
     "@sveltejs/adapter-auto": "npm:^7.0.0"
     "@sveltejs/kit": "npm:^2.49.1"
     "@sveltejs/vite-plugin-svelte": "npm:^6.2.1"
